@@ -1,9 +1,9 @@
-const express = require("express")
+const express = require("express");
 //connect to mongoose
-const mongoose = require("mongoose")
-const cors = require("cors")
+const mongoose = require("mongoose");
+const cors = require("cors");
 // to make our own variables environment, we store it in a variable
-require("dotenv").config()
+require("dotenv").config();
 
 // set up express in a function - "app" - with which we can interact
 const app = express();

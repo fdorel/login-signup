@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
     },
     (err) => {
         if(err) throw err;
-        console.log("");
+        console.log("MongoDB connection established");
     }
 );
 

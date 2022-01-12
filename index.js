@@ -12,7 +12,7 @@ app.use(express.json());  //json - json body parser, so that we can read json ob
 app.use(cors()); // we activate cross origin share reading
 
 // environment variables we can get from the node "process"
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // start the server, the second parameter is a callback function - listener
 app.listen(5000, () => console.log(`The server has started on port: ${PORT}`));

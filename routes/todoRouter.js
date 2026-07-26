@@ -28,6 +28,7 @@ router.get("/all", auth, async (req, res) => {
     res.json(todos);
 });
 
+/*Router delete if...*/
 router.delete("/:id", auth, async (req, res) => {
     const todo = await Todo.findOne({ userId:req.user, _id: req.params.id }); 
     if( !todo )

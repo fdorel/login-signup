@@ -6,7 +6,7 @@ router.post("/", auth, async (req,res) => {
     try {
       const { title } = req.body;
 
-      // validation  
+      /* validation if there is no .title then status 400 */  
       if( !title ) 
       return res.status(400).json({ msg: "Not all fields are completed" }
     );

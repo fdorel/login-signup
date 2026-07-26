@@ -23,12 +23,13 @@ router.post("/", auth, async (req,res) => {
     }
 });
 
+/* router get request response */
 router.get("/all", auth, async (req, res) => {
     const todos = await Todo.find({ userId: req.user });
     res.json(todos);
 });
 
-/*Router delete if...*/
+/*router delete if...*/
 router.delete("/:id", auth, async (req, res) => {
     const todo = await Todo.findOne({ userId:req.user, _id: req.params.id }); 
     if( !todo )
